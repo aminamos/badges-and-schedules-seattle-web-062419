@@ -14,8 +14,9 @@ def assign_rooms(names)
   roomassignment
 end
 
-def printer
-  puts batch_badge_creator
+def printer(attendees)
+  puts batch_badge_creator(attendees)
+  puta assign_rooms(attendees)
   # assign_rooms(attendees).each {|x| << attendees}
   
 end
