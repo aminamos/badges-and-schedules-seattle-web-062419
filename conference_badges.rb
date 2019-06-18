@@ -15,7 +15,9 @@ def assign_rooms(names)
 end
 
 def printer(attendees)
+  nar = []
   batch_badge_creator(attendees)
   assign_rooms(attendees).each {|x| nar << attendees}
+  nar
 end
 
